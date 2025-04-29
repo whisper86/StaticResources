@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting</title>
+    <link rel="icon" href="https://www.freeimg.cn/i/2025/01/08/677e3cc2cb45a.webp">
+    <style>
+      body{
+        background: url("https://www.yaonas.space/assets/background.png") no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+      }
+      p, h1{
+        position: relative;
+        top: 300px;
+        text-align: center;
+        color: burlywood;
+      }
+      #time{
+          color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-content">
+      <h1>Redirecting</h1>
+    <p>
+        <span id="time">5</span> s to Link Page
+    </p>
+    </div>
+    
+    <script>
+        var second=5;
+        var time = document.getElementById("time");
+        function show() {
+            second--;
+            if(second==0){
+                location.href="https://link3.cc/whisperyao";
+            }
+            time.innerHTML=second+"";
+
+        }
+        setInterval(show,1000);
+        
+        </script>
+  </body>
+</html>
